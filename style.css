@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #350943, #1b0129);
+  color: white;
+}
+/* .background-animation {
+  filter: blur(100px);
+  z-index: -1;
+  overflow: hidden;
+} */
+/* .container {
+  top: 0;
+  left: 0;
+  animation: logo 6s infinite ease-in-out;
+}
+@keyframes logo {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+  }
+  75% {
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+} */
+.first {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.first span {
+  background-color: white;
+  color: black;
+}
+.container {
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+.logo-title {
+  display: flex;
+}
+.logo {
+  text-align: left;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.ready svg {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b0158;
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  margin: 0 auto 30px;
+}
+
+.countdown .time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* .countdown .time .number {
+    font-size: 3rem;
+} */
+.timer {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.countdown .colon {
+  font-size: 3rem;
+  padding: 0 10px;
+}
+
+.countdown .label {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.email-notify {
+  margin-top: 20px;
+}
+
+.email-notify input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 60%;
+}
+
+.email-notify input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(68, 65, 65);
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.email-notify input[type="submit"]:hover {
+  background-color: #7e018a;
+}
+
+.logo {
+  width: 35px;
+  height: 40px;
+  animation: bounceRotate 5s infinite;
+}
+
+@keyframes bounceRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+.logo svg {
+  transition: transform 0.5s ease-in-out;
+}
